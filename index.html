@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StockWatch Deluxe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">📊 StockWatch Pro</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#markets">Markets</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro fade-in" id="home">
+      <h1>Track Your Favorite Stocks</h1>
+      <p>Live updates, trends, and more at your fingertips.</p>
+    </section>
+
+    <section class="slider-section" id="markets">
+      <button class="slider-btn left" onclick="prevSlide()">←</button>
+      <div class="slider" id="slider">
+        <img src="https://via.placeholder.com/300x200?text=AAPL" alt="AAPL" />
+        <img src="https://via.placeholder.com/300x200?text=GOOGL" alt="GOOGL" />
+        <img src="https://via.placeholder.com/300x200?text=AMZN" alt="AMZN" />
+      </div>
+      <button class="slider-btn right" onclick="nextSlide()">→</button>
+    </section>
+
+    <section class="stocks" id="news">
+      <div class="stock-card">
+        <h2>Apple (AAPL)</h2>
+        <p>Price: $178.34</p>
+      </div>
+      <div class="stock-card delay1">
+        <h2>Google (GOOGL)</h2>
+        <p>Price: $133.27</p>
+      </div>
+      <div class="stock-card delay2">
+        <h2>Amazon (AMZN)</h2>
+        <p>Price: $121.15</p>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>About StockWatch</h2>
+      <p>StockWatch is your portal to stay informed and ahead in the markets. Built for clarity, speed, and style.</p>
+    </section>
+  </main>
+
+  <!-- Easter Egg Modal -->
+  <div class="easter-egg" id="easter-egg">
+    <iframe src="https://classic.minecraft.net" frameborder="0"></iframe>
+    <button onclick="closeEgg()">Close Game</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
